@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛집 소개 블로그</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            color: #ff6f61;
+        }
+
+        section p {
+            line-height: 1.6;
+        }
+
+        section a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>맛집 소개 블로그</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showRestaurant(1)">풍년집</a></li>
+                <li><a href="#" onclick="showRestaurant(2)">윤화돈까스</a></li>
+                <li><a href="#" onclick="showRestaurant(3)">바스버거</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="restaurant1" class="hidden">
+            <h2>풍년집 소개</h2>
+            <p>풍년집은 제가 어렸을 때 부터 자주 가던 식당으로 제가 제일 좋아하는 곳 입니다. 이곳은 소갈비 전문점인데 여기 소갈비는 18000원으로 다른 곳 보다 저렴하고, 마늘 양념으로 소갈비를 버무려서 나오는데 이걸 숯불에 구워먹으면 마늘의 향이 더해져서 소갈비를 더 맛있게 드실 수 있습니다. 하지만 저는 소갈비보다는 여기 된장찌개를 좋아합니다. 여기 된장찌개는 멸치육수를 베이스로한 매콤하고 된장맛이 진한 것이 특징인 저의 최애 음식입니다.정말 꼭 한 번 드셔보시길 바랍니다 </p> 
+            <p><a href="https://map.naver.com/p/entry/place/18583473?id=18583473&c=15.00,0,0,0,dh.">풍년집 주소</a> <a href="#" onclick="scrollToTop()">맨 위로 가기</a></p>
+        </section>
+        
+        <section id="restaurant2" class="hidden">
+            <h2>윤화돈까스 소개</h2>
+            <p>윤화돈까스는 기사식당으로 제가 맨 처음 이 동네에 이사 왔을 때 부터 있던 식당입니다. 경양식 돈까스로 크기도 성인남자 1인 기준으로 충분히 먹을 수 있을만큼 나옵니다. 기사식당이여서 퀄리티가 조금 떨어질줄 알았지만 제가 먹어본 경양식 돈까스 중에서 가장 맛있었습니다. 두툼한 돼지고기가 특징이고 소스는 너무 자극적이지 않지만 경양식 돈까스와 아주 찰떡인 맛으로 조화가 굉장히 좋습니다.</p>
+            <p><a href="https://map.naver.com/p/search/%EC%9C%A4%ED%99%94%EB%8F%88%EA%B9%8C%EC%8A%A4/place/13100219?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp">윤화돈까스 주소</a> <a href="#" onclick="scrollToTop()">맨 위로 가기</a></p>
+        </section>
+        
+        <section id="restaurant3" class="hidden">
+            <h2>바스버거 소개</h2>
+            <p>바스버거는 수제버거 집으로 티비에도 출현한 버거집입니다. 제가 가장 좋아하는 메뉴는 기본인 바스버거입니다. 바스버거는 양상추, 양파, 토마토, 소고기 패티, 버터 번, 특별 소스까지 재료들의 조합이 끝내주는 버거입니다. 하지만 가장 인기가 많은 버거는 더블 베이컨 치즈버거로 말 그대로 베이컨이 두개 패티가 두개 들어간 버거입니다. 이곳은 햄버거 뿐만 아니라 버팔로 윙도 정말 맛있는 집으로 이곳을 올 기회가 생긴다면 꼭 버팔로 윙도 함께 드셔보시길 바랍니다.</p>
+            <p><a href="https://map.naver.com/p/search/%EB%B0%94%EC%8A%A4%EB%B2%84%EA%B1%B0/place/38403519?c=13.00,0,0,0,dh&placePath=%3Fentry%3Dbmp">바스버거 주소</a> <a href="#" onclick="scrollToTop()">맨 위로 가기</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 맛집 소개 블로그</p>
+    </footer>
+
+    <script>
+        function showRestaurant(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            const restaurant = document.getElementById('restaurant' + id);
+            restaurant.classList.remove('hidden');
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
